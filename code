@@ -1,0 +1,83 @@
+#include <stdio.h>
+
+int main()
+{
+	int ay_no;
+	char* ay_adi;
+	int ay_numarasi;
+	printf("Lutfen bir ay numarasi giriniz");
+	scanf("%d" , &ay_no);
+
+	printf("\n");
+
+	switch (ay_no) {
+    case 1:
+    ay_adi = "Ocak";
+    ay_numarasi =31;
+    break;
+	case 3:
+    ay_adi = "Mart";
+	ay_numarasi = 31;
+	break;
+	case 5:
+    ay_adi = "Mayis";
+    ay_numarasi = 31;
+    break;
+	case 7:
+    ay_adi = "Temmuz";
+    ay_numarasi = 31;
+	break;
+	case 8:
+	ay_adi = "Agustos";
+	ay_numarasi = 31;
+	break;
+    case 10:
+    ay_adi = "Eylul";
+    ay_numarasi = 31;
+    break;
+    case 12:
+    ay_adi = "Aralik";
+    ay_numarasi = 31;
+    break;
+    	printf("Girdiginiz ay 31 gun surer.");
+    	break;
+    	
+    case 4:
+    ay_adi = "Nisan";
+    ay_numarasi = 30;
+    break;
+	case 6:
+    ay_adi = "Haziran";
+    ay_numarasi = 30;
+    break;
+    case 9:
+    ay_adi = "Eylul";
+    ay_numarasi = 30;
+    break;
+    case 11:
+    ay_adi = "Kasim";
+    ay_numarasi = 30;
+    break;
+    	printf("Girdiginiz ay 30 gun surer.");
+    	break;
+    	
+    case 2:
+    ay_adi = "Subat";
+    ay_numarasi = 28;
+    	printf("Girdiginiz ay 28 gun veya 29 gun surer");
+    	break;
+    default:
+    	printf("Oyle bir ay yoktur.");
+}
+    	if (ay_numarasi > 0) {
+        printf("\n%s ayi %d gun surer.\n", ay_adi, ay_numarasi);
+    } else if (ay_no == 2) {
+         printf("\n%s ayi, yilina gore **28 veya 29 gun** surer.\n", ay_adi);
+    }
+}
+
+    	
+    
+    
+    	
+		
